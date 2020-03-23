@@ -1,0 +1,1 @@
+insert into tasks(title, status, priority, description) values ('Another Task', 2, 2, 'lol lol this desc description');

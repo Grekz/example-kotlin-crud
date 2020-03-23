@@ -1,0 +1,19 @@
+
+## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+spring:
+  datasource:
+    url: &dbURL jdbc:mysql://localhost:3306/kotlin_crud_db
+    username: &dbUser root
+    password: &dbPassword 123456
+#  flyway:
+#    enabled: true
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+#flyway:
+#  url: *dbURL
+#  user: *dbUser
+#  password: *dbPassword
