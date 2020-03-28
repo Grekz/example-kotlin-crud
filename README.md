@@ -5,7 +5,7 @@
 You need to have a mysql database running with a database named: 'kotlin_crud_db'
 Let's run this command and you will have it:
 ```shell script
-$ docker run --rm --name test-mysql -p 3306 -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=kotlin_crud_db -d mysql:latest
+$ docker run --rm --name test-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=kotlin_crud_db -d mysql:latest
 ```
 
 ## Running the app
