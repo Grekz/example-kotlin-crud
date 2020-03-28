@@ -18,13 +18,13 @@ $ gradle bootRun
 
 ```shell script
 ## Get all tasks
-$curl --location --request GET 'localhost:8080/v1/api/tasks'
+$ curl --location --request GET 'localhost:8080/v1/api/tasks'
 
 ## Get task by id
-$curl --location --request GET 'localhost:8080/v1/api/tasks/1'
+$ curl --location --request GET 'localhost:8080/v1/api/tasks/1'
 
 ## Post task
-curl --location --request POST 'localhost:8080/v1/api/tasks/' \
+$ curl --location --request POST 'localhost:8080/v1/api/tasks/' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 	"title": "new 2nd task", 
@@ -34,7 +34,7 @@ curl --location --request POST 'localhost:8080/v1/api/tasks/' \
 }'
 
 ## Update task
-curl --location --request PUT 'localhost:8080/v1/api/tasks/2' \
+$ curl --location --request PUT 'localhost:8080/v1/api/tasks/2' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 	"title": "blah blah new 2nd task", 
@@ -44,5 +44,5 @@ curl --location --request PUT 'localhost:8080/v1/api/tasks/2' \
 }'
 
 ## Delete task
-curl --location --request DELETE 'localhost:8080/v1/api/tasks/2'
+$ curl --location --request DELETE 'localhost:8080/v1/api/tasks/2'
 ```
